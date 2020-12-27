@@ -1,10 +1,10 @@
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.json({ msg: 'Hello', status: 201 })
 })
-app.get('/hello', (req, res) => {
+app.get('/api/hello', (req, res) => {
   res.json({ msg: 'Hello', status: 200 })
 })
 app.listen(5000, () => {
